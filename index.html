@@ -35,6 +35,9 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 .dropdown-content a {
   color: black;
@@ -42,47 +45,19 @@
   text-decoration: none;
   display: block;
 }
+.dropdown-content .header {
+  background: red;
+  padding: 16px;
+  color: white;
+}
+
 
 .dropdown-content a:hover {background-color: #ddd;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
-<!---Dropdown Button 2---!>
-.dropbtn 2 {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
 
-.dropdown 2 {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content 2 {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a 2 {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a 2:hover {background-color: #ddd;}
-
-.dropdown 2:hover .dropdown-content 2 {display: block;}
-
-.dropdown 2:hover .dropbtn 2 {background-color: #3e8e41;}
 </style>
 </head>
 <body>
@@ -97,6 +72,7 @@
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
+                <li><a href="#about" class="menu-btn">My Resume</a></li>
                 <li><a href="#Assignments" class="menu-btn">Assignments</a></li>
             </ul>
             <div class="menu-btn">
@@ -110,7 +86,7 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Hello, myname is</div>
+                <div class="text-1">Hello, My name is</div>
                 <div class="text-2">Abhishek Pande</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
                 <a href="#">Hire me</a>
@@ -130,7 +106,7 @@
                 <div class="column right">
                     <div class="text">I'm Abhishek Pande and I'm a <span class="typing-2"></span></div>
                     <p>I have One year of experience in IT industry . I started my career as a web developer using HTML, CSS and JAVA . Later when the single page applications came into popularity, I learned Angular JS later I moved to React JS. The reusable component feature made me fell in love with React for the API development I have been using Node JS and Express JS and database is Mongo DB. Entire platform is built on AWS cloud environment.</p>
-                 
+                    <a href="Resume1.pdf">Download Resume</a>
                 </div>
 				
             </div>
@@ -153,13 +129,7 @@
 			<a href="CoverLetter_Dice Job.pdf">CoverLetter Dice Job</a>
 			<a href="Resume_CV_Dice_Job.pdf">Resume for Dice Job</a>
                 </div>
-	     <div class="dropdown 2">
-                <button class="dropbtn 2">Resume</button>
-            
-                <div class="dropdown-content 2">
-                    <a href="Resume1.pdf"> Resume</a>
-                </div>
-              </div>
+	     
         </div>
     </section>
 
