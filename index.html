@@ -12,7 +12,43 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
 </head>
 <body>
     <div class="scroll-up-btn">
@@ -26,12 +62,14 @@
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
+                <li><a href="#Assignments" class="menu-btn">Assignments</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
+	
 
     <!-- home section start -->
     <section class="home" id="home">
@@ -41,6 +79,7 @@
                 <div class="text-2">Abhishek Pande</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
                 <a href="#">Hire me</a>
+				
             </div>
         </div>
     </section>
@@ -57,18 +96,32 @@
                     <div class="text">I'm Abhishek Pande and I'm a <span class="typing-2"></span></div>
                     <p>I have One year of experience in IT industry . I started my career as a web developer using HTML, CSS and JAVA . Later when the single page applications came into popularity, I learned Angular JS later I moved to React JS. The reusable component feature made me fell in love with React for the API development I have been using Node JS and Express JS and database is Mongo DB. Entire platform is built on AWS cloud environment.</p>
                     <a href="Resume.docx">Download CV</a>
-					<a href="CoverLetter_updated.docx">Download Cover Letter</a>
-			<a href="Lab 5- Annotation, summary, and preparing to use source.docx">Lab 5 Annotated Bibliography</a>
-			<a href="Lab 6A - Annotated Bibliography.docx"> Lab 6A- Annotated Bibliography</a>
-			<a href="Applicant Tracking Software Research.docx">Abstracts</a>
-			<a href="cvv.pdf"> Resume</a>
-			<a href="Week 6 Assignment.zip">Week 6 Assignment Files</a>
+					<a href="CoverLetter.docx">Download Cover Letter</a>
                 </div>
+				
             </div>
         </div>
     </section>
 
-    
+    <!-- Assignments section start -->
+    <section class="Assignments" id="Assignments">
+        <div class="max-width">
+            <h2 class="title">Course Assignments</h2>
+            <div class="dropdown">
+                <button class="dropbtn">Assignments</button>
+            
+                <div class="dropdown-content">
+                    <a href="Resume.docx">Download CV</a>
+                    <a href="CoverLetter_updated.docx">Download Cover Letter</a>
+                    <a href="Lab 5- Annotation, summary, and preparing to use source.docx">Lab 5 Annotated Bibliography</a>
+                    <a href="Lab 6A - Annotated Bibliography.docx"> Lab 6A- Annotated Bibliography</a>
+                    <a href="Applicant Tracking Software Research.docx">Abstracts</a>
+                    <a href="cvv.pdf"> Resume</a>
+                    <a href="Week 6 Assignment.zip">Week 6 Assignment Files</a>
+                </div>
+              </div>
+        </div>
+    </section>
 
     <!-- skills section start -->
     <section class="skills" id="skills">
